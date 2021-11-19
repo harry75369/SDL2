@@ -262,8 +262,8 @@ Emscripten_CreateWindow(_THIS, SDL_Window * window)
     window->driverdata = wdata;
 
     /* One window, it always has focus */
-    SDL_SetMouseFocus(window);
-    SDL_SetKeyboardFocus(window);
+    // SDL_SetMouseFocus(window);
+    // SDL_SetKeyboardFocus(window);
 
     Emscripten_RegisterEventHandlers(wdata);
 
